@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #229bbd;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.main.LoginPage">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@rogob.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="여행자 커뮤니티입니다.">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="이용하시려면 로그인 해주세요.">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </VBox>
+      <BorderPane focusTraversable="true">
+         <center>
+            <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" prefWidth="5.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="700.0" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtId" prefWidth="0.0" GridPane.columnIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextField>
+                  <PasswordField fx:id="txtPwd" onKeyPressed="#onEnterPressed" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#Login" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #4e5151;" text="LOGIN" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="I  D" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWPORD" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="30.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_RIGHT" focusTraversable="true" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <Text focusTraversable="true" onMouseClicked="#IdFind" strokeWidth="0.0" text="아이디찾기">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text focusTraversable="true" onMouseClicked="#PwdFind" strokeType="INSIDE" strokeWidth="0.0" text="비밀번호 찾기">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text focusTraversable="true" onMouseClicked="#Join" strokeWidth="0.0" text="회원가입">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

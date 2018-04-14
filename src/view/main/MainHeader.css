@@ -1,0 +1,9 @@
+#menuVBox .button:hover {
+    -fx-background-color: linear-gradient(#43487d,#43487d);
+}
+#menuVBox .button{
+	-fx-background-color:  RGB(255,255,255,0);
+	
+	-fx-font-size: 10pt;
+
+}

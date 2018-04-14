@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.my.MyTeamProduce">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+      <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="btnTeamProduceJoinYes" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onbtnTeamProduceJoinYes" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #79bff2;" text="팀 생성" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtFieldTeamName" prefHeight="50.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.columnSpan="2">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="txtFieldTatalNumberPeople" prefHeight="50.0" prefWidth="170.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextArea fx:id="tetAreaExplanation" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="2" GridPane.rowSpan="4">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </TextArea>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #23ddfa;" text="팀소개" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #23ddfa;" text=" 팀 명" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #23ddfa;" text="총 인원수" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #23ddfa;" text="시작일" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #23ddfa;" text="마감일" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </Label>
+      <DatePicker fx:id="datePickerStartDate" prefHeight="50.0" prefWidth="400.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </DatePicker>
+      <DatePicker fx:id="datePickerDeadline" prefHeight="50.0" prefWidth="400.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </DatePicker>
+      <RadioButton fx:id="Private" mnemonicParsing="false" selected="true" text="팀 비공개" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Open" mnemonicParsing="false" text="팀 공개" textAlignment="CENTER" toggleGroup="$group" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </RadioButton>
+   </children>
+</GridPane>

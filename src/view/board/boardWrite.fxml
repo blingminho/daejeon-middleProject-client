@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1400.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.board.BoardWrite">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="65.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="말머리 선택" />
+                  <ComboBox fx:id="cmbHeadline" prefWidth="190.0" />
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="110.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="제 목" />
+                  <TextField fx:id="txtHeadline" prefWidth="650.0" />
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="85.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="파일첨부" />
+                  <Button fx:id="Filebtn" mnemonicParsing="false" onAction="#btnFile" text="파일첨부" />
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="200.0" />
+         </padding>
+      </VBox>
+   </top>
+   <center>
+      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" maxWidth="800.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER_LEFT">
+         <content>
+            <TextArea fx:id="txtArea" prefHeight="200.0" prefWidth="200.0" />
+         </content></ScrollPane>
+   </center>
+   <left>
+      <VBox fx:id="vbox" alignment="CENTER" prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgView1" fitHeight="122.0" fitWidth="300.0" onMouseClicked="#imgClk1" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="imgView2" fitHeight="122.0" fitWidth="300.0" onMouseClicked="#imgClk2" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="imgView3" fitHeight="122.0" fitWidth="300.0" onMouseClicked="#imgClk3" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="imgView4" fitHeight="122.0" fitWidth="300.0" onMouseClicked="#imgClk4" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="imgView5" fitHeight="122.0" fitWidth="300.0" onMouseClicked="#imgClk5" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+         </children></VBox>
+   </left>
+   <bottom>
+      <HBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnOk" text="확 인" />
+            <Button mnemonicParsing="false" onAction="#btnCancel" text="취 소" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

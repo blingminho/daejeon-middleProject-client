@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1400.0" style="-fx-background-color: #c4efb3;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.team.TeamMenu">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="LabelTeamHome" onMouseClicked="#LabelTeamHomeClicked" text="홈" GridPane.columnIndex="3" />
+      <Label fx:id="LabelTeamChat" onMouseClicked="#LabelTeamChatClicked" text="채팅방" GridPane.columnIndex="4" />
+      <Label fx:id="LabelTeamMemberProfile" onMouseClicked="#LabelTeamMemberProfileClicked" text="팀원&#10;프로필" textAlignment="CENTER" GridPane.columnIndex="5" />
+      <Label fx:id="LabelTeamBoard" onMouseClicked="#LabelTeamBoardClicked" text="게시판" visible="false" GridPane.columnIndex="7" />
+      <Label fx:id="LabelTeamPhb" onMouseClicked="#LabelTeamPhbClicked" text="사진첩" GridPane.columnIndex="6" />
+      <Label fx:id="LabelTeamTravelList" onMouseClicked="#LabelTeamTravelListClicked" text="여행지&#10;즐겨찾기" textAlignment="CENTER" GridPane.columnIndex="8" />
+      <Label fx:id="LabelTeamSchedule" onMouseClicked="#LabelTeamScheduleClicked" text="일정관리" GridPane.columnIndex="9" />
+      <Label fx:id="LabelTeamManage" onMouseClicked="#LabelTeamManageClicked" text="팀 관리" GridPane.columnIndex="10" />
+      <Label fx:id="LabelTeamSecession" onMouseClicked="#LabelTeamSecessionClicked" text="팀 탈퇴" GridPane.columnIndex="11" />
+   </children>
+</GridPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" style="-fx-background-color: #f2fbfc;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.team.TeamTravelPopup">
+   <children>
+      <GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="108.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="592.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="타입" />
+            <Label text="제목" GridPane.rowIndex="1" />
+            <Label text="대표 이미지" GridPane.rowIndex="2" />
+            <Label text="홈페이지 주소" GridPane.rowIndex="3" />
+            <Label text="전화번호" GridPane.rowIndex="4" />
+            <Label text="시도" GridPane.rowIndex="5" />
+            <Label text="시군구" GridPane.rowIndex="6" />
+            <Label text="주소" GridPane.rowIndex="7" />
+            <Label text="소개" GridPane.rowIndex="8" />
+            <Label text="구글지도" GridPane.rowIndex="9" />
+            <Label fx:id="labelContentTypeId" text="Label" wrapText="true" GridPane.columnIndex="1" />
+            <Label fx:id="labelTitle" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="labelHomepage" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="labelTel" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="labelAreaCode" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="labelSigunguCode" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <content>
+                  <ImageView fx:id="imageViewFirst" fitHeight="527.0" fitWidth="860.0" pickOnBounds="true" preserveRatio="true" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="scrollOverview" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <content>
+                  <WebView fx:id="webViewOverview" prefHeight="388.0" prefWidth="571.0" />
+               </content>
+            </ScrollPane>
+            <Label fx:id="labelAddr1" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <WebView fx:id="webViewMap" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
